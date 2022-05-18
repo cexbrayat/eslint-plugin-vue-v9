@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+const val = ref('Hello')
 </script>
 
 <template>
@@ -14,6 +16,7 @@ import TheWelcome from './components/TheWelcome.vue'
 
   <main>
     <TheWelcome />
+    {{ val }}
   </main>
 </template>
 
